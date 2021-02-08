@@ -15,7 +15,6 @@
 #*/
 #include <filesystem>
 #include <vector>
-#include "raylib.h"
 #include "utils.hpp"
 
 #include "Game.hpp"
