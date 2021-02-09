@@ -1,4 +1,4 @@
-# This file is part of the
+/*# This file is part of the
 # ██████╗ ███████╗██████╗ ███╗   ███╗ █████╗ ██████╗ ██╗      ██████╗  ██████╗ ██████╗ ████████╗
 # ██╔══██╗██╔════╝██╔══██╗████╗ ████║██╔══██╗██╔══██╗██║      ██╔══██╗██╔═══██╗██╔══██╗╚══██╔══╝
 # ██████╔╝█████╗  ██████╔╝██╔████╔██║███████║██║  ██║██║█████╗██████╔╝██║   ██║██████╔╝   ██║   
@@ -12,27 +12,10 @@
 #   (c) 2021 Jacob Moena
 #
 #   Zlib License
-#
-set(TARGET_NAME permadiport)
+#*/
+#include "RayCaster.hpp"
 
-set(main
-    ./main/Application.cpp
-    ./main/Application.hpp
-    ./main/Game.cpp
-    ./main/Game.hpp
-    ./main/RayCaster.cpp
-    ./main/RayCaster.hpp
-)
+void RayCaster::init()
+{
 
-set(utility
-    ./utility/utils.cpp
-    ./utility/utils.hpp
-)
-
-add_executable(${TARGET_NAME}
-    ./main.cpp
-    ${main}
-    ${utility}
-)
-
-target_link_libraries(${TARGET_NAME} raylib)
+}
