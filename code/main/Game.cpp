@@ -15,6 +15,7 @@
 #*/
 #include "Game.hpp"
 #include "raylib.h"
+#include "RayCaster.hpp"
 
 Game::Game()
 {
@@ -26,6 +27,8 @@ Game::~Game()
 
 bool Game::OnUserCreate()
 {
+    RayCaster raycaster;
+    raycaster.init(m_width, m_height);
     return true;
 }
 
